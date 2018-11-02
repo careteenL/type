@@ -13,7 +13,7 @@
     "test": "rimraf mochawesome-report/ && cross-env NODE_ENV=test mocha --compilers js:babel-core/register ./test  --recursive --reporter mochawesome",
     "example": "npm run build && node example/app.js",
     "rename": "node rename.js",
-    "release": "npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
+    "release": "npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish --access=public"
   },
   "keywords": [
     "rollup",
