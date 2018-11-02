@@ -22,7 +22,7 @@ type(/a/) // regexp
 type(new String('')) // string
 type(new String(''), true) // String
 ```
-更详细使用请查看[API](./doc.api.md)
+更详细使用请查看[API](./doc/api.md)
 
 ## 兼容性
 
@@ -30,7 +30,7 @@ IE9+
 
 ## 使用文档
 
-- [API](./doc.api.md)
+- [API](./doc/api.md)
 - [对该库的源码解析](xxx)
 
 ## issue模板

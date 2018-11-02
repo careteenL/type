@@ -23,10 +23,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/careteenL/@careteen-type.git"
+    "url": "git://github.com/careteenL/type.git"
   },
   "bugs": {
-    "url": "https://github.com/careteenL/@careteen-type/issues"
+    "url": "https://github.com/careteenL/type/issues"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

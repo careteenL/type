@@ -10,7 +10,7 @@ let oldName = 'jslib-cli'
 let replaceReg = new RegExp(`${oldName}`, 'g')
 
 // todo replace
-let newName = '@careteen-type'
+let newName = 'type'
 
 // todo add : 待替换的文件
 let fileMap = [
