@@ -11,6 +11,7 @@ JavaScript类型检查，弥补`typeof`不足
 
 ## 快速使用
 
+NPM
 ```shell
 npm i -D @careteen/type
 ```
@@ -21,6 +22,18 @@ type(null) // null
 type(/a/) // regexp
 type(new String('')) // string
 type(new String(''), true) // String
+```
+
+or CDN
+```js
+<script src='https://unpkg.com/@careteen/type/dist/index.js'></script>
+<script>
+  var type = window['@careteen/type']
+  type(null) // null
+  type(/a/) // regexp
+  type(new String('')) // string
+  type(new String(''), true) // String  
+</script>
 ```
 更详细使用请查看[API](./doc/api.md)
 
