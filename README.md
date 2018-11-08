@@ -48,6 +48,10 @@ npm install
 
 ...
 
+编写详细使用文档介绍功能，可在本地查看`http://127.0.0.1:8880`
+```shell
+npm run doc
+```
 请编写单元测试覆盖所加功能
 ```shell
 npm run test

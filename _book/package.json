@@ -12,7 +12,7 @@
     "build": "npm run clean && npm run lint && cross-env NODE_ENV=production rollup -c build/rollup.prod.config.js",
     "test": "rimraf mochawesome-report/ && cross-env NODE_ENV=test mocha --compilers js:babel-core/register ./test  --recursive --reporter mochawesome",
     "example": "npm run build && node example/app.js",
-    "doc": "gitbook init && rimraf _book/ && gitbook build && http-server -p 8880",
+    "doc": "http-server -p 8880",
     "rename": "node rename.js",
     "release": "npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish --access=public"
   },

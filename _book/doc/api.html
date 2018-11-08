@@ -1,0 +1,357 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>使用文档 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    项目介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="api.html">
+            
+                <a href="api.html">
+            
+                    
+                    使用文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >使用文档</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6587;&#x6863;">&#x6587;&#x6863;</h1>
+<h2 id="&#x76EE;&#x5F55;">&#x76EE;&#x5F55;</h2>
+<ul>
+<li><a href="#&#x63CF;&#x8FF0;">&#x63CF;&#x8FF0;</a></li>
+<li><a href="#&#x8BED;&#x6CD5;">&#x8BED;&#x6CD5;</a><ul>
+<li><a href="#&#x53C2;&#x6570;">&#x53C2;&#x6570;</a></li>
+<li><a href="#&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</a></li>
+<li><a href="#&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x63CF;&#x8FF0;">&#x63CF;&#x8FF0;</h2>
+<p>&#x4E3B;&#x8981;&#x662F;&#x4E3A;&#x4E86;&#x5F25;&#x8865;&#x539F;&#x751F;<code>typeof</code>&#x7684;&#x4E0D;&#x8DB3;&#xFF0C;&#x8FD4;&#x56DE;&#x66F4;&#x52A0;&#x51C6;&#x786E;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x274C;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">typeof</span> <span class="hljs-literal">null</span> <span class="hljs-comment">// object</span>
+<span class="hljs-keyword">typeof</span> /a/ <span class="hljs-comment">// object</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>(<span class="hljs-string">&apos;&apos;</span>) <span class="hljs-comment">// object</span>
+</code></pre>
+<p>&#x2705;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> type <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@careteen/type&apos;</span>
+type(<span class="hljs-literal">null</span>) <span class="hljs-comment">// null</span>
+type(<span class="hljs-regexp">/a/</span>) <span class="hljs-comment">// regexp</span>
+type(<span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>(<span class="hljs-string">&apos;&apos;</span>)) <span class="hljs-comment">// string</span>
+</code></pre>
+<p>&#x76EE;&#x524D;&#x652F;&#x6301;</p>
+<ul>
+<li>number, boolean, string, undefined, null, symbol</li>
+<li>array, object, set, weakset, map, weakmap</li>
+<li>function, class</li>
+<li>regexp, date, math, promise</li>
+</ul>
+<h2 id="&#x8BED;&#x6CD5;">&#x8BED;&#x6CD5;</h2>
+<h3 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h3>
+<ul>
+<li><code>{*} element</code> &#x671F;&#x671B;&#x6C42;&#x53D6;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;</li>
+<li><code>{Boolean} strict</code> &#x662F;&#x5426;&#x4E3A;&#x4E25;&#x683C;&#x6A21;&#x5F0F;<ul>
+<li>true: <code>new String(&apos;&apos;) =&gt; String</code></li>
+<li>false: <code>new String(&apos;&apos;) =&gt; string</code></li>
+<li>&#x8BF4;&#x660E;&#xFF1A;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x4E3B;&#x8981;&#x662F;&#x4E3A;&#x4E86;&#x533A;&#x5206;<code>&#x57FA;&#x672C;&#x7C7B;&#x578B;</code>&#x7684;<code>&#x539F;&#x59CB;&#x503C;</code>&#x548C;<code>&#x5BF9;&#x8C61;&#x503C;</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h3>
+<ul>
+<li><code>{String}</code> &#x8FD4;&#x56DE;&#x66F4;&#x52A0;&#x51C6;&#x786E;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;</li>
+</ul>
+<h3 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h3>
+<p>&#x1F447;&#x7ED9;&#x51FA;&#x539F;&#x751F;<code>typeof</code>&#x548C;<code>type</code>&#x5728;&#x975E;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x4E0B;&#x7684;&#x533A;&#x522B;</p>
+<pre><code class="lang-js">type(<span class="hljs-number">1</span>) <span class="hljs-comment">// &apos;number&apos;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-number">1</span> <span class="hljs-comment">// &apos;number&apos;</span>
+
+type(<span class="hljs-literal">true</span>) <span class="hljs-comment">// &apos;boolean&apos;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-literal">true</span> <span class="hljs-comment">// &apos;boolean&apos;</span>
+
+type(<span class="hljs-string">&apos;&apos;</span>) <span class="hljs-comment">// &apos;string&apos;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-string">&apos;&apos;</span> <span class="hljs-comment">// &apos;string&apos;</span>
+
+type(<span class="hljs-literal">undefined</span>) <span class="hljs-comment">// &apos;undefined&apos;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-literal">undefined</span> <span class="hljs-comment">// &apos;undefined&apos;</span>
+
+type(<span class="hljs-literal">null</span>) <span class="hljs-comment">// &apos;null&apos;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-literal">null</span> <span class="hljs-comment">// &apos;object&apos;</span>
+
+type(<span class="hljs-built_in">Symbol</span>()) <span class="hljs-comment">// &apos;symbol&apos;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-built_in">Symbol</span>() <span class="hljs-comment">// &apos;symbol&apos;</span>
+
+type([]) <span class="hljs-comment">// &apos;array&apos;</span>
+<span class="hljs-keyword">typeof</span> [] <span class="hljs-comment">// &apos;object&apos;</span>
+
+type({}) <span class="hljs-comment">// &apos;object&apos;</span>
+<span class="hljs-keyword">typeof</span> {} <span class="hljs-comment">// &apos;object&apos;</span>
+
+type(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>()) <span class="hljs-comment">// &apos;set&apos;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>() <span class="hljs-comment">// &apos;object&apos;</span>
+
+type(<span class="hljs-keyword">new</span> <span class="hljs-built_in">WeakSet</span>()) <span class="hljs-comment">// &apos;weakset&apos;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">WeakSet</span>() <span class="hljs-comment">// &apos;object&apos;</span>
+
+type(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>()) <span class="hljs-comment">// &apos;map&apos;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>() <span class="hljs-comment">// &apos;object&apos;</span>
+
+type(<span class="hljs-keyword">new</span> <span class="hljs-built_in">WeakMap</span>()) <span class="hljs-comment">// &apos;weakmap&apos;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">WeakMap</span>() <span class="hljs-comment">// &apos;object&apos;</span>
+
+type(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{}) <span class="hljs-comment">// &apos;function&apos;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{} <span class="hljs-comment">// &apos;function&apos;</span>
+
+type(<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{}) <span class="hljs-comment">// &apos;function&apos;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{} <span class="hljs-comment">// &apos;function&apos;</span>
+
+type(<span class="hljs-regexp">/1/</span>) <span class="hljs-comment">// &apos;regexp&apos;</span>
+<span class="hljs-keyword">typeof</span> /<span class="hljs-number">1</span>/ <span class="hljs-comment">// &apos;object&apos;</span>
+
+type(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>()) <span class="hljs-comment">// &apos;date&apos;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>() <span class="hljs-comment">// &apos;object&apos;</span>
+
+type(<span class="hljs-built_in">Math</span>) <span class="hljs-comment">// &apos;math&apos;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-built_in">Math</span> <span class="hljs-comment">// &apos;object&apos;</span>
+
+type(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{})) <span class="hljs-comment">// &apos;promise&apos;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{}) <span class="hljs-comment">// &apos;object&apos;</span>
+</code></pre>
+<p>&#x1F447;&#x7ED9;&#x51FA;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x7684;&#x8FD4;&#x56DE;&#x503C;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">typeof</span> <span class="hljs-number">1</span> <span class="hljs-comment">// =&gt; number</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Number</span>(<span class="hljs-number">1</span>) <span class="hljs-comment">// =&gt; object</span>
+type(<span class="hljs-number">1</span>) <span class="hljs-comment">// =&gt; number</span>
+type(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Number</span>(<span class="hljs-number">1</span>)) <span class="hljs-comment">// =&gt; number</span>
+type(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Number</span>(<span class="hljs-number">1</span>), <span class="hljs-literal">true</span>) <span class="hljs-comment">// =&gt; Number</span>
+
+<span class="hljs-keyword">typeof</span> <span class="hljs-string">&quot;&quot;</span> <span class="hljs-comment">// =&gt; string</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>(<span class="hljs-string">&quot;&quot;</span>) <span class="hljs-comment">// =&gt; object</span>
+type(<span class="hljs-string">&quot;&quot;</span>) <span class="hljs-comment">// =&gt; string</span>
+type(<span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>(<span class="hljs-string">&quot;&quot;</span>)) <span class="hljs-comment">// =&gt; string</span>
+type(<span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>(<span class="hljs-string">&quot;&quot;</span>), <span class="hljs-literal">true</span>) <span class="hljs-comment">// =&gt; String</span>
+
+<span class="hljs-keyword">typeof</span> <span class="hljs-literal">true</span> <span class="hljs-comment">// =&gt; boolean</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Boolean</span>(<span class="hljs-literal">true</span>) <span class="hljs-comment">// =&gt; object</span>
+type(<span class="hljs-literal">true</span>) <span class="hljs-comment">// =&gt; boolean</span>
+type(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Boolean</span>(<span class="hljs-literal">true</span>)) <span class="hljs-comment">// =&gt; boolean</span>
+type(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Boolean</span>(<span class="hljs-literal">true</span>), <span class="hljs-literal">true</span>) <span class="hljs-comment">// =&gt; Boolean</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 项目介绍">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"使用文档","level":"1.2","depth":1,"previous":{"title":"项目介绍","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"doc/api.md","mtime":"2018-11-02T10:00:04.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-08T13:15:34.057Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
