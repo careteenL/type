@@ -39,7 +39,7 @@ or CDN
 
 ## 兼容性
 
-IE9+
+None
 
 ## 使用文档
 
@@ -52,7 +52,7 @@ IE9+
 
 ## 贡献者及指南
 
-clone仓库并引入依赖
+clone仓库并引入依赖
 ```shell
 git clone git@github.com:careteenL/type.git
 npm install
@@ -65,7 +65,7 @@ npm install
 ```shell
 npm run doc
 ```
-请编写单元测试覆盖所加功能
+请编写单元测试覆盖所加功能
 ```shell
 npm run test
 ```
