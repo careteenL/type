@@ -18,7 +18,7 @@ typeof null // object
 typeof /a/ // object
 typeof new String('') // object
 ```
-✅
+✅
 ```js
 import type from '@careteen/type'
 type(null) // null
@@ -36,7 +36,7 @@ type(new String('')) // string
 
 ### 参数
 
-- `{*} element` 期望求取类型的变量
+- `{*} element` 期望求取类型的变量
 - `{Boolean} strict` 是否为严格模式
   - true: `new String('') => String`
   - false: `new String('') => string`
@@ -44,11 +44,11 @@ type(new String('')) // string
 
 ### 返回值
 
-- `{String}` 返回更加准确的数据类型
+- `{String}` 返回更加准确的数据类型
 
 ### 示例
 
-👇给出原生`typeof`和`type`在非严格模式下的区别
+👇给出原生`typeof`和`type`在非严格模式下的区别
 ```js
 type(1) // 'number'
 typeof 1 // 'number'
